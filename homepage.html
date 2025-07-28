@@ -7,95 +7,62 @@
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f9f9f9;
-      padding-bottom: 60px; /* Space for bottom nav */
-    }
-
-    header {
-      background-color: #1abc9c;
+      padding: 0;
+      background: url('1.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Segoe UI', sans-serif;
       color: white;
-      padding: 20px;
-      text-align: center;
-      font-size: 24px;
-      font-weight: bold;
-    }
-
-    main {
-      padding: 20px;
-    }
-
-    /* Bottom navigation */
-    .bottom-nav {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      background-color: white;
-      border-top: 1px solid #ccc;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      height: 60px;
-      z-index: 1000;
-    }
-
-    .bottom-nav a {
-      text-decoration: none;
-      color: #333;
-      font-size: 14px;
-      text-align: center;
-    }
-
-    .bottom-nav a:hover {
-      color: #1abc9c;
-    }
-
-    .nav-item {
       display: flex;
       flex-direction: column;
       align-items: center;
     }
 
-    .nav-item i {
+    header {
+      background: rgba(0, 0, 0, 0.7);
+      width: 100%;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 28px;
+      font-weight: bold;
+      text-shadow: 0 0 10px #fff;
+    }
+
+    .menu {
+      margin-top: 60px;
+      display: grid;
+      grid-template-columns: repeat(2, 140px);
+      gap: 20px;
+    }
+
+    .menu a {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      text-decoration: none;
+      color: white;
       font-size: 20px;
+      font-weight: bold;
+      transition: 0.3s;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+
+    .menu a:hover {
+      background: rgba(255, 255, 255, 0.4);
+      transform: scale(1.05);
     }
   </style>
-
-  <!-- Include icons (Font Awesome) -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <header>
-    Welcome to Imara Market
-  </header>
+  <header>Welcome to Imara Market</header>
 
-  <main>
-    <p>This is your homepage. Start shopping, browsing categories, and checking your messages here!</p>
-  </main>
-
-  <nav class="bottom-nav">
-    <a href="homepage.html" class="nav-item">
-      <i class="fas fa-home"></i>
-      <span>Home</span>
-    </a>
-    <a href="category.html" class="nav-item">
-      <i class="fas fa-th-large"></i>
-      <span>Category</span>
-    </a>
-    <a href="cart.html" class="nav-item">
-      <i class="fas fa-shopping-cart"></i>
-      <span>Cart</span>
-    </a>
-    <a href="message.html" class="nav-item">
-      <i class="fas fa-comment-alt"></i>
-      <span>Message</span>
-    </a>
-    <a href="account.html" class="nav-item">
-      <i class="fas fa-user"></i>
-      <span>Account</span>
-    </a>
-  </nav>
+  <div class="menu">
+    <a href="category.html">Category</a>
+    <a href="cart.html">Cart</a>
+    <a href="message.html">Message</a>
+    <a href="account.html">Account</a>
+  </div>
 
 </body>
-  </html>
+</html>
